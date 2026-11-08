@@ -89,3 +89,19 @@ The public wishes wall polls every 30 seconds; it displays up to the most recent
 ## Image rights
 
 Photographs in this package are derived from images supplied for this wedding. You should only publish them with the consent of the pictured people. No media was retrieved from the placeholder folder named `XXX`, which was not available.
+
+
+## Pembaruan islami — 8 November 2026
+- Bagian mempelai menampilkan nama lengkap, gelar, urutan anak ketiga, serta nama orang tua.
+- Akad nikah: 09.00 WIB – selesai; resepsi: 10.00 WIB – selesai, Sabtu 21 November 2026.
+- Countdown mengarah ke awal akad, dan Google Calendar memasukkan slot 09.00–12.00 WIB (akhir pukul 12.00 hanya perkiraan untuk kalender).
+- QS Ar-Rum 30:21 Arab & terjemahan, rujukan: https://quran.kemenag.go.id/quran/per-ayat/surah/30?from=21&to=21
+- Seluruh ilustrasi tetap dipakai: cover.webp, couple.webp, nateq.webp, rachma.webp.
+- Pengaturan editable berada di config.js. Google Apps Script tidak di-reset, URL endpoint jika pernah diisi perlu dipertahankan dari config.js Anda yang sekarang sebelum menimpa file.
+- **Konfirmasi ejaan:** nama ibu mempelai wanita ditranskripsikan dari gambar menjadi "Erna Djatmikon ingrum". Periksa dan koreksi pada config.js sebelum menyebarkan undangan jika ada perbedaan ejaan.
+
+### Mengunggah pembaruan via GitHub
+Repository: https://github.com/Nateq22/rachma-nateq-wedding
+Gunakan GitHub Desktop untuk mengganti file dengan aman, atau GitHub web editor untuk mengubah `index.html`, `style.css`, `config.js`, `script.js` dan upload isi folder `assets/`.
+Tidak perlu mengganti `apps-script/Code.gs` dan `.github/workflows/pages.yml` apabila file tersebut sudah berfungsi.
+Periksa kembali URL Apps Script yang aktif pada `config.js`: paket ini menyertakan placeholder kosong sehingga jangan menimpanya tanpa menyalin URL lama jika RSVP sudah terhubung.
