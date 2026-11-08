@@ -1,5 +1,5 @@
 /**
- * Google Sheets backend for Rachma & Nateq wedding invitation.
+ * Google Sheets backend for Aulia & Nateq wedding invitation.
  * Bind this Apps Script to the spreadsheet: Extensions > Apps Script.
  * Deploy as Web app: Execute as Me; Who has access: Anyone.
  * PUBLIC ENDPOINT: suitable for low-volume wedding RSVP. It is not spam-proof.
@@ -53,7 +53,7 @@ function doPost(e) {
 
 function doGet(e) {
   const p=(e&&e.parameter)||{};
-  if (p.action!=='wishes') return json_({ok:true,service:'Rachma & Nateq RSVP API'});
+  if (p.action!=='wishes') return json_({ok:true,service:'Aulia & Nateq RSVP API'});
   try {
     const sheet=sheet_(),last=sheet.getLastRow();
     const start=Math.max(2,last-99);
