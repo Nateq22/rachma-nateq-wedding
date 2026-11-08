@@ -32,3 +32,33 @@ try {await fetch(endpoint,{method:'POST',mode:'no-cors',body:data,redirect:'foll
 });
 if(C.musicUrl){const u=safeLink(C.musicUrl)||new URL(C.musicUrl,location.href).href;const audio=new Audio(u);audio.loop=true;const toggle=$('music-toggle');toggle.hidden=false;toggle.addEventListener('click',async()=>{if(audio.paused){try{await audio.play();toggle.textContent='♫';toggle.setAttribute('aria-label','Jeda musik');}catch{}}else{audio.pause();toggle.textContent='♪';toggle.setAttribute('aria-label','Putar musik');}});}
 })();
+
+const weddingMusic = document.getElementById("wedding-music");
+const musicButton = document.getElementById("music-toggle");
+const openInvitation = document.getElementById("open-invitation");
+
+weddingMusic.volume = 0.35;
+
+function updateMusicButton() {
+  musicButton.textContent = weddingMusic.paused ? "♫" : "❚❚";
+}
+
+openInvitation.addEventListener("click", () => {
+  weddingMusic.play().then(updateMusicButton).catch(() => {});
+});
+
+musicButton.addEventListener("click", async () => {
+  if (weddingMusic.paused) {
+    try {
+      await weddingMusic.play();
+    } catch (error) {
+      console.warn("Musik tidak dapat diputar:", error);
+    }
+  } else {
+    weddingMusic.pause();
+  }
+  updateMusicButton();
+});
+
+weddingMusic.addEventListener("play", updateMusicButton);
+weddingMusic.addEventListener("pause", updateMusicButton);
