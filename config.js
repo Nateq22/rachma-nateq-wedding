@@ -13,7 +13,7 @@ window.WEDDING = {
   venueAddress: 'Jl. Sumatra No. 6–10, Kota Madiun',
   mapsUrl: 'https://maps.app.goo.gl/W8bGrfvUcxgeyXLM9',
   description: 'Pernikahan Aulia Rachma, MBBCh dan Mh. Nateq Nouri, S.P.W.K., M.P.W.K. Akad nikah pukul 09.00 WIB dan resepsi pukul 10.00 WIB hingga selesai. Mohon doa restu Bapak/Ibu/Saudara/i.',
-  googleScriptUrl: '', // REPLACE with deployed Google Apps Script /exec URL
+  googleScriptUrl: 'https://script.google.com/macros/s/AKfycbwvOiVv0DtBBOgtokvum7sPCpIlKONzI9ChziCdTiu_CM-Y1m0gc9DBJ0TCNOg_i-Y5/exec', // REPLACE with deployed Google Apps Script /exec URL
   musicUrl: 'assets/backsound-aulia-nateq.mp3', // instrumental orisinal undangan
   refreshWishesSeconds: 30
 };
